@@ -32,26 +32,26 @@
     @yield('styles')
 </head>
 <body class="font-sans antialiased bg-gray-100">
-    <header class="bg-gray-800 text-white p-4">
+    <header class="bg-teal-800 text-white p-4">
         <nav class="nav-for-mobile max-w-7xl mx-auto flex justify-between lg:hidden">
-            <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-600 hover:text-white hover:border-white">
+            <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-gray-200 border-white-600 hover:text-white hover:border-black">
                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0V15z"/></svg>
             </button>
-            <a href="{{ route('home') }}" class="mobile-isaac text-xl font-bold" style="font-family: 'Dancing Script', cursive;">Ahsarmay - Little Writer</a>
+            <a href="{{ route('home') }}" class="mobile-isaac text-xl font-bold" style="font-family: 'Anton', cursive; src: url({{ asset('fonts/dancing-script/Anton-Regular.ttf') }});">Ahsarmay - Little Writer</a>
         </nav>
         <nav class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-6 lg:text-sm">
             <div class="lg:hidden">
-                <a href="{{ route('about') }}" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded">About</a>
-                <a href="{{ route('blog.index') }}" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded">Blog</a>
-                <a href="{{ route('contact') }}" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded">Contact</a>
+                <a href="{{ route('about') }}" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">About</a>
+                <a href="{{ route('blog.index') }}" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">Blog</a>
+                <a href="{{ route('contact') }}" class="block mt-4 lg:inline-block lg:mt-0 hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">Contact</a>
             </div>
         </nav>
         <nav id="menu" class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-6 lg:text-sm ml-4 mr-4">
-            <a href="{{ route('home') }}" class="block lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded" style="font-family: 'Dancing Script', cursive;">Ahsar May ~ Little Writer</a>
+            <a href="{{ route('home') }}" class="block lg:inline-block lg:mt-0 bg-emerald-50 text-black hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">Home</a>
             <div class="flex-1"></div>
-            <a href="{{ route('about') }}" class="block lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded">About</a>
-            <a href="{{ route('blog.index') }}" class="block lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded">Blog</a>
-            <a href="{{ route('contact') }}" class="block lg:inline-block lg:mt-0 hover:bg-gray-700 hover:text-white px-4 py-2 rounded">Contact</a>
+            <a href="{{ route('about') }}" class="block lg:inline-block lg:mt-0 bg-emerald-50 text-black hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">About</a>
+            <a href="{{ route('blog.index') }}" class="block lg:inline-block lg:mt-0 bg-emerald-50 text-black hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">Blog</a>
+            <a href="{{ route('contact') }}" class="block lg:inline-block lg:mt-0 bg-emerald-50 text-black hover:bg-emerald-100 hover:text-black px-4 py-2 rounded">Contact</a>
         </nav>
         <button id="exit-toggle" class="hidden lg:hidden lg:flex lg:items-center lg:w-auto lg:space-x-6 lg:text-sm absolute top-4 right-4">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Exit</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
@@ -76,7 +76,7 @@
     <main class="py-6">
         @yield('content')
     </main>
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-teal-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Navigation Links -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
